@@ -1,23 +1,37 @@
+#include <iostream>
+#include <cmath>
+
+namespace math {
 
 double cos(double x)
 {
-  double sign = 1;          // նշանը
-  double denominator = 1.0; // հայտարարը
-  double factor = 1;        // գործակիցը
-  double result = 0.0;      // հաշվարկի արդյունքը
+  constexpr int N = 10;
 
-  for( int i = 0; i < 10; i += 2 ) {
+  double result = 1.0;
+  double factor = 1.0;
+  double denominator = 1.0;
+  int sign = 1;
+
+  for( int i = 2; i < 2 * N; i += 2 ) {
+    denominator = denominator * (i - 1) * i;
     factor = factor * x * x;
-    denominator = denominator * i * (i + 1);
-    result += sign * factor / denominator;
+    result *= (sign * factor / denominator);
     sign *= -1;
   }
 
-  return result;
+  return 1.0;
 }
+
+} // namespace math
+
 
 
 int main()
 {
-  //
+  using namespace std;
+
+  constexpr double PI = 3.14159;
+
+  cout << cos(PI / 6) << endl;
+  cout << std::cos(PI / 6) << endl;
 }
