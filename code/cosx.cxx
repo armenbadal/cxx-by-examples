@@ -15,7 +15,7 @@ double cos(double x)
   for( int i = 2; i < 2 * N; i += 2 ) {
     denominator = denominator * (i - 1) * i;
     factor = factor * x * x;
-    result *= (sign * factor / denominator);
+    result += (sign * factor / denominator);
     sign *= -1;
   }
 
