@@ -5,11 +5,11 @@ int main()
 {
     using namespace std;
 
-    cout << "Գնդի տրամագիծը (սմ). ";
+    cout << "Գնդի տրամագիծը (մ). ";
     double diameter = 0.0;
     cin >> diameter;
 
-    cout << "Գնդի պատի հաստությունը (սմ). ";
+    cout << "Գնդի պատի հաստությունը (մ). ";
     double thickness = 0.0;
     cin >> thickness;
 
@@ -20,15 +20,15 @@ int main()
     using std::numbers::pi;
 
     const auto inner_volume = (4 * pi * inner_radius * inner_radius * inner_radius) / 3;
-    cout << "Գնդի խոռոչի ծավալը (սմ³). " << inner_volume << endl;
+    cout << "Գնդի խոռոչի ծավալը (մ³). " << inner_volume << endl;
 
     const auto surface_area = 4 * pi * radius * radius;
-    cout << "Գնդի արտաքին մակերեսը (սմ²). " << surface_area << endl;
+    cout << "Գնդի մակերևույթի մակերեսը (մ²). " << surface_area << endl;
 
-    const double steel_density = 7.8; // g/sm³
+    const double steel_density = 7800; // կգ/մ³
     const auto outer_volume = (4 * pi * radius * radius * radius) / 3;
     const auto weight = steel_density * (outer_volume - inner_volume);
-    cout << "Գնդի զանգվածը (գ). " << weight << endl;
+    cout << "Գնդի զանգվածը (կգ). " << weight << endl;
 
     return 0;
 }
