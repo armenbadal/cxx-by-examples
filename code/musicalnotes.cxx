@@ -8,25 +8,25 @@ int main()
 
   switch( note ) {
     case 'C':
-      std::cout << "դո" << endl;
+      std::cout << "դո" << std::endl;
       break;
     case 'D':
-      std::cout << "ռե" << endl;
+      std::cout << "ռե" << std::endl;
       break;
     case 'E':
-      std::cout << "մի" << endl;
+      std::cout << "մի" << std::endl;
       break;
     case 'F':
-      std::cout << "ֆա" << endl;
+      std::cout << "ֆա" << std::endl;
       break;
     case 'G':
-      std::cout << "սոլ" << endl;
+      std::cout << "սոլ" << std::endl;
       break;
     case 'A':
-      std::cout << "լա" << endl;
+      std::cout << "լա" << std::endl;
       break;
     case 'B':
-      std::cout << "սի" << endl;
+      std::cout << "սի" << std::endl;
       break;
     default:
       std::cerr << "Այդպիսի նոտա չկա։" << std::endl;
