@@ -6,3 +6,4 @@
 3. [Տրամաբանական սխեմայի հաշվարկ](logicalscheme.md)
 4. [Շրջանագիծ և քառակուսի](circleandsquare.md)
 5. [Նոտաների գրառում](musicalnotes.md)
+6. [Թվի պարզ արտադրիչները](primefactors.md)

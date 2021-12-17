@@ -77,3 +77,34 @@ if( !note_name.empty() )
 else
     cout << note << " տառով որևէ նոտա չի նշանակվում։" << endl;
 ```
+
+Բայց C++ լեզուն հնարավորություն է տալիս նման խնդիրները լուծել ավելի արտահայտիչ `switch` կառուցվածքով։ Այս գրամանի արգումենտում տրվում է տարրական տիպի արժեք, իսկ մարմնում `case` նշիչներով սահմանվում են այն բլոկները...։ Հետևյալը համարժեք է վերը բերված `if`-`else`-ներով տարբերակին։
+
+```C++
+std::string note_name;
+
+switch( note ) {
+  case 'C':
+    note_name = "դո";
+    break;
+  case 'D':
+    note_name = "ռե";
+    break;
+  case 'E':
+    note_name = "մի";
+    break;
+  case 'F':
+    note_name = "ֆա";
+    break;
+  case 'G':
+    note_name = "սոլ";
+    break;
+  case 'A':
+    note_name = "լա";
+    break;
+  case 'B':
+    note_name = "սի";
+    break;
+  default:
+}
+```
