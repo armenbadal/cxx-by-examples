@@ -1,9 +1,10 @@
 # C++ լեզուն՝ օրինակներով
 
-0. [Ներածություն](introduction.md)
-1. [Ողջո՜ւյն, աշխա՛րհ](helloworld.md)
-2. [Գնդի մակերեսը, ծավալը և զանգվածը](sphere.md)
-3. [Տրամաբանական սխեմայի հաշվարկ](logicalscheme.md)
-4. [Շրջանագիծ և քառակուսի](circleandsquare.md)
-5. [Նոտաների գրառում](musicalnotes.md)
-6. [Թվի պարզ արտադրիչները](primefactors.md)
+0. [Ներածություն](c00introduction.md)
+1. [Ողջո՜ւյն, աշխա՛րհ](c01helloworld.md)
+2. [Գնդի մակերեսը, ծավալը և զանգվածը](c02sphere.md)
+3. [Տրամաբանական սխեմայի հաշվարկ](c03logicalscheme.md)
+4. [Շրջանագիծ և քառակուսի](c04circleandsquare.md)
+5. [Նոտաների գրառում](c05musicalnotes.md)
+6. [Թվի պարզ արտադրիչները](c06primefactors.md)
+7. [ՄԵծագույն ընդհանուր բաժանարար](c07gcd.md)
