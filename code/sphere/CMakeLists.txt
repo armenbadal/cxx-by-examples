@@ -1,0 +1,3 @@
+PROJECT(sphere)
+
+ADD_EXECUTABLE(${PROJECT_NAME} sphere.cxx)

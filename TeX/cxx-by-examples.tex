@@ -1,0 +1,57 @@
+% arara: xelatex
+% arara: bibtex
+% arara: makeindex
+% arara: xelatex
+
+\documentclass[a4paper,12pt,draft]{report}
+\usepackage[top=1in,bottom=1.2in,left=1.2in,right=1in]{geometry}
+
+\usepackage[dvips]{graphicx}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\usepackage{makeidx}
+%\usepackage[Bjornstrup]{fncychap}
+
+\setmainfont[Ligatures=TeX,HyphenChar="058A]{GHEAMariam}
+\setsansfont[Ligatures=TeX,HyphenChar="058A]{GHEAGrapalat}
+\setmonofont{DejaVu Sans Mono}
+
+
+\renewcommand{\chaptername}{Խնդիր}
+\renewcommand{\contentsname}{Բովանդակություն}
+\renewcommand{\figurename}{Նկար}
+\renewcommand{\tablename}{Աղյուսակ}
+\renewcommand{\appendixname}{Հավելված}
+\renewcommand{\bibname}{Գրականություն}
+\renewcommand{\indexname}{Առարկայական ցանկ}
+
+
+\tolerance=1500
+\linespread{1.2}
+\frenchspacing
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}%
+{numbers=left,fontsize=\small,baselinestretch=1}
+
+\makeindex
+
+\begin{document}
+
+\input{cbe-titlepage.tex}
+
+\tableofcontents
+
+\input{c00introduction.tex}
+\input{c01helloworld.tex}
+\input{c02sphere.tex}
+
+%\bibliographystyle{plain}
+%\bibliography{vcl-book}
+
+\printindex
+
+\end{document}

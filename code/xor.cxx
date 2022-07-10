@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool xor(boola a, bool b)
+bool xor(bool a, bool b)
 {
   bool x = !a && b;
   bool y = a && !b;
